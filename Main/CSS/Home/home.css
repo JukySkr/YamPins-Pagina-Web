@@ -1,11 +1,16 @@
+body, html {
+    margin: 0;
+}
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 :root {
     --blanco: rgb(255, 255, 255);
     --gris-oscuro: rgb(22, 22, 22);
+    --gris-claro: rgb(161, 161, 161);
     --rojo-claro: rgb(224, 118, 118);
-    --rojo-claro-50: rgb(194, 67, 67);
+    --rojo-fuerte: rgb(196, 6, 6);
+    --rosa-claro: rgb(253, 238, 249);
 }
 p {
     color: var(--rojo-claro);
@@ -13,10 +18,19 @@ p {
 
 /* 
 MAIN
-*/ 
+*/
+main {
+    background-color: var(--rosa-claro);
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+} 
+.main-section-title {
+    width: 34rem;
+}
 .main-section-buttom {
     color: var(--blanco);
-    background-color: var(--rojo-claro-50);
+    background-color: var(--rojo-fuerte);
     box-shadow: 1px 1px 5px var(--rojo-claro);
     
     font-size: large;
