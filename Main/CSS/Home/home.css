@@ -1,0 +1,7 @@
+:root {
+    --gris-oscuro: rgb(22, 22, 22);
+    --rojo-claro: rgb(224, 118, 118);
+}
+p {
+    color: var(--rojo-claro);
+}
