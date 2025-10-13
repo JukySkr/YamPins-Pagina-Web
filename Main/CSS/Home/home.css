@@ -20,13 +20,21 @@ p {
 MAIN
 */
 main {
+
+} 
+.main-section-div-container {
+    display: flex;
     background-color: var(--rosa-claro);
     padding: 10px 50px;
-    display: flex;
-    flex-direction: column;
-} 
+    height: 400px;
+    align-items: center;
+    gap: 4rem;
+}
 .main-section-title {
     width: 34rem;
+}
+.main-section-div-container-div-texto, .main-section-imagen-pins {
+    margin-top: 10px;
 }
 .main-section-buttom {
     color: var(--blanco);
@@ -47,4 +55,8 @@ main {
 .main-section-buttom:hover {
     scale: 1.05;
     cursor: pointer;
+}
+.main-section-imagen-pins {
+    width: 550px;
+    height: 350px;
 }
