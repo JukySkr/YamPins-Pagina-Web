@@ -5,17 +5,52 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
 }
 :root {
-    --blanco: rgb(255, 255, 255);
-    --gris-oscuro: rgb(22, 22, 22);
-    --gris-claro: rgb(161, 161, 161);
+    --beige-claro: rgb(250, 244, 237);
+    --borgoña: rgb(144, 42, 57);
+    --beige: rgb(228, 210, 184);
     --rojo-claro: rgb(224, 118, 118);
     --rojo-fuerte: rgb(196, 6, 6);
     --rosa-claro: rgb(253, 238, 249);
 }
-p {
-    color: var(--rojo-claro);
+.header-p {
+    margin: 0px;
+    padding: 0px;
+    color : var(--borgoña);
+
 }
 
+.header-logo {
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.header-div {
+    height: 285px;
+    text-align: center;
+    background-color: var(--beige-claro);
+    border-radius: 0% 0% 11% 11%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display : flex;
+    flex-direction: column; 
+    align-items: center;
+    list-style: none;
+}
+.botones-h {
+    text-decoration: none;
+    color: var(--borgoña);
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 20px;
+    border: 2px solid var(--borgoña);
+    border-radius: 8px;
+    background-color: var(--beige-claro);
+    box-shadow: 1px 1px 5px var(--beige);
+    transition: ease-out 0.07s;
+}
+body {
+    background-color: var(--beige);
+}
 /* 
 MAIN
 */
