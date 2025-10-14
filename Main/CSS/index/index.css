@@ -1,6 +1,10 @@
 body, html {
     margin: 0;
 }
+body {
+    /* background-color: var(--beige); */
+    background-color: white;
+}
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,21 +16,21 @@ body, html {
     --rojo-fuerte: rgb(196, 6, 6);
     --rosa-claro: rgb(253, 238, 249);
 }
+
+.header-logo {
+    margin: 2.5rem 0px;
+    width: 250px;
+    height: 250px;
+}
 .header-p {
     margin: 0px;
     padding: 0px;
     color : var(--borgoña);
-
+    font-size: 1.2rem;
 }
-
-.header-logo {
-    width: 150px;
-    height: 150px;
-    margin-left: 20px;
-    margin-top: 10px;
-}
+/* OPCION LOGO EN EL MEDIO */
+/*
 .header-div {
-    height: 285px;
     text-align: center;
     background-color: var(--beige-claro);
     border-radius: 0% 0% 11% 11%;
@@ -47,51 +51,43 @@ body, html {
     background-color: var(--beige-claro);
     box-shadow: 1px 1px 5px var(--beige);
     transition: ease-out 0.07s;
+} 
+*/
+/*---------------------------- */
+
+/* OPCION LOGO EN MEDIO SIN HEADER  */
+/* --------------------- */
+
+.header-div {
+    text-align: center;
+    box-shadow: 1px 2px 5px var(--beige);
 }
-body {
-    background-color: var(--beige);
+.header-div-opciones {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    font-size: large;
+    padding: 20px 0 0 0;
 }
+.botones-h a{
+    text-decoration: none;
+    color: var(--rojo-fuerte);
+    text-shadow: 1px 1px 5px var(--rojo-claro);
+}
+.botones-h:hover {
+    transform: scale(1.2);
+
+}
+/* --------------------- */
 /* 
 MAIN
 */
 main {
+}
 
-} 
-.main-section-div-container {
-    display: flex;
-    background-color: var(--rosa-claro);
-    padding: 10px 50px;
-    height: 400px;
-    align-items: center;
-    gap: 4rem;
+.accesorios-imagen {
+    width: 250px;
 }
-.main-section-title {
-    width: 34rem;
-}
-.main-section-div-container-div-texto, .main-section-imagen-pins {
-    margin-top: 10px;
-}
-.main-section-buttom {
-    color: var(--blanco);
-    background-color: var(--rojo-fuerte);
-    box-shadow: 1px 1px 5px var(--rojo-claro);
-    
-    font-size: large;
-    width: 150px;
-    height: 60px;
-    
-    border-radius: 10px;
-    text-align: center;
-    align-content: center;
-
-    transition: ease-out 0.07s;
-
-}
-.main-section-buttom:hover {
-    scale: 1.05;
-    cursor: pointer;
-}
-.main-section-imagen-pins {
-    width: 550px;
-    height: 350px;
+.correa {
+    width: 400px;
 }
