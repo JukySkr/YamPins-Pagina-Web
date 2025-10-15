@@ -99,7 +99,10 @@ main {
     width: 250px;
 
 }
-.correa {
+.imagen-pin {
+    rotate: calc(90deg);
+}
+.imagen-correa {
     width: 400px;
 }
 .accesorios-boton {
@@ -111,7 +114,16 @@ main {
     margin: 0;
     border-radius: 20px;
     background-color: var(--rojo-fuerte);
+
+    transition: ease 0.2s;
 }
+.accesorios-boton:hover {
+    text-shadow: 1px 1px 5px white;
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 5px var(--rojo-fuerte);
+}
+/*FOOTER*/
 footer {
     height: 50px;
     text-align: center;
