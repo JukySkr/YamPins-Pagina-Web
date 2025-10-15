@@ -61,11 +61,14 @@ body {
 /* --------------------- */
 header {
     padding-bottom: 50px;
+    justify-items: center;
 }
 .header-div {
     background-color: var(--beige);
     text-align: center;
     box-shadow: 1px 2px 5px var(--beige-oscuro);
+    width: 97%;
+    border-radius: 0px 0px 10px 10px;
 }
 .header-div-opciones {
     display: flex;
@@ -74,15 +77,17 @@ header {
     font-size: large;
     padding: 20px 0 0 0;
 }
-.botones-h a{
+.botones-h a {
     text-decoration: none;
     color: var(--azul-claro);
     text-shadow: 1px 1px 5px var(--azul);
 }
+
 .botones-h:hover {
     transform: scale(1.2);
-
+    transition: ease 0.5s;
 }
+
 /* --------------------- */
 /* 
 MAIN
@@ -100,6 +105,11 @@ main {
     flex-direction: column;
     margin: 0 auto;
     gap: 1.2rem;
+
+
+}
+.accesorios-texto { 
+    color: var(--rojo);
 }
 .accesorios-imagen {
     margin-top: 25px;
@@ -120,7 +130,7 @@ main {
     align-content: center;
     margin: 0;
     border-radius: 20px;
-    background-color: var(--rojo);
+    background-color: var(--azul);
 
     transition: ease 0.2s;
 }
@@ -128,7 +138,7 @@ main {
     text-shadow: 1px 1px 5px white;
     cursor: pointer;
     transform: scale(1.05);
-    box-shadow: 1px 1px 5hpx var(--rojo);
+    box-shadow: 1px 1px 5px var(--azul-claro);
 }
 /*FOOTER*/
 footer {
