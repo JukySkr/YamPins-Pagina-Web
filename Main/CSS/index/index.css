@@ -26,7 +26,8 @@ body {
 .header-p {
     margin: 0px;
     padding: 0px;
-    color : var(--rojo);
+    /* color : var(--rojo);  Color original*/
+    color: var(--azul-claro);
     font-size: 1.2rem;
 }
 
@@ -62,6 +63,7 @@ body {
 header {
     padding-bottom: 50px;
     justify-items: center;
+    height: 100%;
 }
 .header-div {
     background-color: var(--beige);
@@ -77,15 +79,24 @@ header {
     font-size: large;
     padding: 20px 0 0 0;
 }
-.botones-h a {
+.main-botones {
+    border-radius: 20px;
+    padding: 10px 35px;
+    border: 1px solid white;
+    box-shadow: 1px 2px 5px var(--beige-oscuro);
+}
+.botones-a  {
+    margin: 15px 0px 25px 0px;
+    border-radius: 20px;
+    padding: 10px 35px;
+    box-shadow: 1px 2px 5px var(--azul);
+    font-size: 1.5rem;
     text-decoration: none;
     color: var(--azul-claro);
-    text-shadow: 1px 1px 5px var(--azul);
+    transition: transform ease 0.5s;
 }
-
-.botones-h:hover {
+.botones-a:hover {
     transform: scale(1.2);
-    transition: ease 0.5s;
 }
 
 /* --------------------- */
