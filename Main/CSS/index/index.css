@@ -57,7 +57,9 @@ body {
 
 /* OPCION LOGO EN MEDIO SIN HEADER  */
 /* --------------------- */
-
+header {
+    padding-bottom: 50px;
+}
 .header-div {
     text-align: center;
     box-shadow: 1px 2px 5px var(--beige);
@@ -83,11 +85,35 @@ body {
 MAIN
 */
 main {
+    padding-bottom: 50px;
 }
-
+.accesorios {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1.2rem;
+}
 .accesorios-imagen {
+    margin-top: 25px;
     width: 250px;
+
 }
 .correa {
     width: 400px;
+}
+.accesorios-boton {
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+    border-radius: 20px;
+    background-color: var(--rojo-fuerte);
+}
+footer {
+    height: 50px;
+    text-align: center;
+    border-top: 1px solid var(--beige);
 }
