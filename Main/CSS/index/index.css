@@ -28,6 +28,7 @@ body {
     color : var(--borgoña);
     font-size: 1.2rem;
 }
+
 /* OPCION LOGO EN EL MEDIO */
 /*
 .header-div {
@@ -121,7 +122,7 @@ main {
     text-shadow: 1px 1px 5px white;
     cursor: pointer;
     transform: scale(1.05);
-    box-shadow: 1px 1px 5px var(--rojo-fuerte);
+    box-shadow: 1px 1px 5hpx var(--rojo-fuerte);
 }
 /*FOOTER*/
 footer {
