@@ -2,19 +2,20 @@ body, html {
     margin: 0;
 }
 body {
-    /* background-color: var(--beige); */
-    background-color: white;
+    /* background-color: var(--beige-oscuro); */
+    background-color: var(--azul);
+    
 }
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 :root {
-    --beige-claro: rgb(250, 244, 237);
-    --borgoña: rgb(144, 42, 57);
-    --beige: rgb(228, 210, 184);
-    --rojo-claro: rgb(224, 118, 118);
-    --rojo-fuerte: rgb(196, 6, 6);
-    --rosa-claro: rgb(253, 238, 249);
+    --beige: #FFF5E1;
+    --azul: #0C1844;
+    --beige-oscuro: #ebe1ce;
+    --rojo: #C80036;
+    --rojo-claro: #FF6969;
+    --azul-claro: #3A5BA0;
 }
 
 .header-logo {
@@ -25,7 +26,7 @@ body {
 .header-p {
     margin: 0px;
     padding: 0px;
-    color : var(--borgoña);
+    color : var(--rojo);
     font-size: 1.2rem;
 }
 
@@ -33,7 +34,7 @@ body {
 /*
 .header-div {
     text-align: center;
-    background-color: var(--beige-claro);
+    background-color: var(--beige);
     border-radius: 0% 0% 11% 11%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display : flex;
@@ -43,14 +44,14 @@ body {
 }
 .botones-h {
     text-decoration: none;
-    color: var(--borgoña);
+    color: var(--azul);
     font-weight: bold;
     font-size: large;
     padding: 10px 20px;
-    border: 2px solid var(--borgoña);
+    border: 2px solid var(--azul);
     border-radius: 8px;
-    background-color: var(--beige-claro);
-    box-shadow: 1px 1px 5px var(--beige);
+    background-color: var(--beige);
+    box-shadow: 1px 1px 5px var(--beige-oscuro);
     transition: ease-out 0.07s;
 } 
 */
@@ -62,8 +63,9 @@ header {
     padding-bottom: 50px;
 }
 .header-div {
+    background-color: var(--beige);
     text-align: center;
-    box-shadow: 1px 2px 5px var(--beige);
+    box-shadow: 1px 2px 5px var(--beige-oscuro);
 }
 .header-div-opciones {
     display: flex;
@@ -74,8 +76,8 @@ header {
 }
 .botones-h a{
     text-decoration: none;
-    color: var(--rojo-fuerte);
-    text-shadow: 1px 1px 5px var(--rojo-claro);
+    color: var(--azul-claro);
+    text-shadow: 1px 1px 5px var(--azul);
 }
 .botones-h:hover {
     transform: scale(1.2);
@@ -86,7 +88,11 @@ header {
 MAIN
 */
 main {
+    background-color: var(--beige);
     padding-bottom: 50px;
+    margin: 25px;
+    box-shadow: 0 2px 8px var(--beige-oscuro);
+    border-radius: 8px;
 }
 .accesorios {
     align-items: center;
@@ -114,7 +120,7 @@ main {
     align-content: center;
     margin: 0;
     border-radius: 20px;
-    background-color: var(--rojo-fuerte);
+    background-color: var(--rojo);
 
     transition: ease 0.2s;
 }
@@ -122,13 +128,13 @@ main {
     text-shadow: 1px 1px 5px white;
     cursor: pointer;
     transform: scale(1.05);
-    box-shadow: 1px 1px 5hpx var(--rojo-fuerte);
+    box-shadow: 1px 1px 5hpx var(--rojo);
 }
 /*FOOTER*/
 footer {
     height: 50px;
     text-align: center;
-    border-top: 1px solid var(--beige);
+    border-top: 1px solid var(--beige-oscuro);
 }
 
 /* PARTE RESPONSIVE */
