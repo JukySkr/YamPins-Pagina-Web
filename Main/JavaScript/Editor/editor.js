@@ -1,9 +1,14 @@
 // Creo el objeto Canvas en el elemento <canvas> de id #canvas-imagen
-var canvas = new fabric.Canvas("canvas-image");
+var canvas = new fabric.Canvas("canvas-image", 
+    // Agrego lo siguiente para darle tamaño por defecto 
+    //  a la imagen y que no se rompa
+    {
+    width: 300,
+    height: 300
+});
 
 // Guardo el elemento input de id #input-imagen en una constante
 const inputImagen = document.getElementById("input-imagen");
-
 // escucho el evento change en inputImagen 
 // y hago la funcion para el elemento (input)
 inputImagen.addEventListener("change", function (elemento) {
@@ -20,9 +25,9 @@ inputImagen.addEventListener("change", function (elemento) {
 //  Uso la funcion que tiene fabric .Imagen.fromURL y al elemento que llamó el evento, entro a su target.result 
 //  En el console.log se vio que ahí está la URL
 fabric.Image.fromURL(event.target.result, function (img) {
-    // ajusto tamaño
-    img.scaleToWidth(200); 
-    img.scaleToHeight(200);
+    // Les doy su tamaño original (que les di cuando creé el objeto)
+    img.scaleToWidth(canvas.width); 
+    img.scaleToHeight(canvas.height);
     // limpio el canvas anterior
       canvas.clear(); 
     //añado al canvas la imagen subida
