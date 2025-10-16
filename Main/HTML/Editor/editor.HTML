@@ -12,14 +12,24 @@
 
     <main>
         <!-- Prueba editor -->
-
-        <input id="input-imagen" type="file">
-
-        <div id="pin-container">
-            <p class="pin"></p>
-            <p class="imagen-puesta"></p>
-        </div>
+         <!-- Fondo blanco que contiene el editor -->
+        <section class="marco-editor">
+            <!-- Divisor que contiene el input -->
+            <div class="div-cargar-imagen">
+                <!-- Input para elegir la imagen -->
+                <input id="input-imagen" type="file">
+            </div>
+            <!-- Divisor que contiene el canvas 
+             (La imagen que se va a cagar) y también contiene
+             el pin (redondo)-->
+            <div id="pin-container">
+                <p class="pin"></p>
+                <canvas id="canvas-image" ></canvas>
+            </div>
+    </section>
     </main>
 </body>
-<script src="../../JavaScript/Editor/editor.js"></script>
+<!-- IMPORTO LA LIBRERÍA FABRIC JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+<script type="module" src="../../JavaScript/Editor/editor.js"></script>
 </html>
