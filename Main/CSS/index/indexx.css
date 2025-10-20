@@ -1,5 +1,5 @@
 body, html {
-    margin: 0;
+    margin: 10px;
 }
 body {
     background-color: var(--beige)
@@ -12,29 +12,80 @@ body {
     --beige-oscuro: #E5D0AC;
     --rojo: #A31D1D;
     --marron: #902A39;
-    --rojo-claro: #d16f6f;
+    --rojo-claro: #ffe7e7;
 }
 header {
-    width: 100%;
     border-bottom: var(--beige-oscuro) 2px solid;
-    height: auto;
-    
+    height: auto; 
+    align-items: center;    
+    text-align: center;
 }
 h2 {
     color: var(--marron);;
 }
-.container {
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    align-items: center;
+b {
+    color: var(--marron);
 }
 .header-logo {
     width: 180px;
     height: 180px;
+    margin-bottom: -2%;
+    margin-top: -1%;
 }
-.header-pasos {
+.header-div-opciones {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-size: large;
+    padding: 20px 0 0 0;
+}
+.botones-a  {
+    margin: 15px 0px 25px 0px;
+    border-radius: 20px;
+    padding: 10px 35px;
+    box-shadow: 1px 2px 5px var(--marron);
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--marron);
+    transition: transform ease 0.5s;
+    font-weight: bold;
+}
+.botones-a:hover {
+    transform: scale(1.2);
+}
+
+
+/* -------------MAIN------------- */
+
+main {
+    margin: 25px;
+    background-color: var(--beige);
+    padding-bottom: 50px;
+    display : flex;
+    flex-direction: column;
+}
+h2 {
+    font-size: 3rem;
+    color: var(--marron);
+    margin-top: 0;
+    padding-top: 20px;
+}
+.presentacion {
+    padding-bottom: 0;
+    background-color: var(--rojo-claro);
+    padding-top: 30px;
+    padding-left: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    gap: 5rem;
+}
+.presentacion-texto {
+    display: flex, wrap;
+    flex-direction: column;
+}
+.section-pasos {
     gap: .75rem;
     align-items: flex-start;
     width: 100%;
@@ -46,14 +97,11 @@ h2 {
     margin-right: 15px;
     margin-left: 15px;
 }
-
-/* -------------MAIN------------- */
-
-main {
-    background-color: var(--beige);
-    padding-bottom: 50px;
-    display : flex;
-    flex-direction: column;
+.paso-descripcion {
+    font-size: 1.2rem;
+}
+.paso-titulo {
+    font-size: 2rem;
 }
 h1 {
     font-size: 1.5rem;

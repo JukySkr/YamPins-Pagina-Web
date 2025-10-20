@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../CSS/index/indexx.css"> 
     </head>
     <body>
@@ -10,28 +11,31 @@
                 <div class="div header-div">
                     <img class="header-logo" src="../../../assets/logo.png" alt="logo de yam pins">
                 </div>
-                <section class="header-pasos">
-                    <div class="paso">
-                        <h2 class="paso-titulo">1. Explorá</h2>
-                        <p class="paso-descripcion">Elegí los productos y selecciona unidades y talle.</p>
-                    </div> 
-                    <div class="paso">
-                        <h2 class="paso-titulo">2. Personalizá</h2>
-                        <p class="paso-descripcion">En el editor, cargá tu imagen o diseño y creá el producto a tu gusto.</p>
-                    </div>
-                    <div class="paso">
-                        <h2 class="paso-titulo">3. Revisamos</h2>
-                        <p class="paso-descripcion">Hablá con nosotros para asegurarte de que tu producto sea perfecto.</p>
-                    </div>
-                    <div class="paso">
-                        <h2 class="paso-titulo">4. ¡Listo!</h2>
-                        <p class="paso-descripcion">Una vez aprobado, empezamos a crear el accesorio de tus sueños.</p>
-                    </div>
-                </section>
+                <div class="header-div-opciones">
+
+                    <a class="botones-a" href=#catalogo>Catálogo</a>
+                    <a class="botones-a" href="/Main/HTML/empeza-a-crear/empeza-a-crear.HTML">Crea tu accesorio</a>
+                    <a class="botones-a" href="">Contactanos</a>
+                </div>
             </div>
         </header>
         <main>
-            <h1>Productos disponibles</h1>
+            <div class="presentacion">
+                <div class="presentacion-texto">
+                    <h2>Diseñá libremente <br>
+                    para expresar tu estilo <br>
+                    y personalidad.</h2>
+                    <p class="presentacion-p">¿Querés ver cómo quedaría accesorio antes de comprarlo? <br>
+                        usa la <b>Vista Previa</b> para hacerlo y asegurarte de que es perfecto 
+                        <img height="20px" class="emoji" src="../../../assets/smiling-face-with-heart-eyes_1f60d.png" alt="emoji corazones">
+                    </p>
+                    <a href="/Main/HTML/Editor/editor.HTML" class="botones-a">Empezar a crear</a>
+                </div>
+                <div class="presentacion-imagen">
+                    <img class="imagen-accesorio" src="../../../assets/pin-stitch.png" alt="imagen de accesorios">
+                </div>
+            </div>
+            <h1 id="catalogo">Productos disponibles</h1>
             
             <div class="divisor-main-accesorios"> 
                 <section class="producto">
